@@ -1,0 +1,22 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#36a161",
+        "activityBar.activeBorder": "#bf0060",
+        "activityBar.background": "#57ef93",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#bf0060",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#57ef93",
+        "statusBar.foreground": "#000000",
+        "statusBarItem.hoverBackground": "#3399ff",
+        "titleBar.activeBackground": "#57ef93",
+        "titleBar.activeForeground": "#000000",
+        "titleBar.inactiveBackground": "#57ef93",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    }
+}
