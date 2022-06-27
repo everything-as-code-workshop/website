@@ -1,6 +1,10 @@
 #!/bin/bash
 if [ -z "$1" ]; then
-    echo "No argument supplied. Either 'dev', 'test' or 'prod' is required.";
+    echo "Azure Resource Group name argument is required.";
+    exit;
+fi
+if [ -z "$2" ]; then
+    echo "Azure Web App name argument is required.";
     exit;
 fi
 echo "Getting azure subscription id...";
@@ -9,6 +13,6 @@ echo "Using $SUBSCRIPTION_ID subscription...";
 echo "Deploying application...";
 az webapp deployment source config-zip \
     --subscription $SUBSCRIPTION_ID \
-    --resource-group rg-everything-as-code-workshop-$1 \
-    --name app-everything-as-code-workshop-$1 \
+    --resource-group $1 \
+    --name $2 \
     --src ./simple-app-release.zip
